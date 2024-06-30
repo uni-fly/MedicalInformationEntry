@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">医疗信息录取</string>
+    <string name="free_clinic">义诊</string>
+    <string name="home_visit">家访</string>
+    <string name="health_edu">健康宣教</string>
+    <string name="free_clinic_now">请选择当前义诊</string>
+    <string name="home_visit_now">请选择当前家访</string>
+    <string name="health_edu_now">请选择当前健康宣教</string>
+    <string name="basic_info">基本信息</string>
+    <string name="physical_info">体征信息</string>
+    <string name="info_searching">统计查询</string>
+    <string name="patient_info">患者信息</string>
+    <string name="recovery_info">康复信息</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

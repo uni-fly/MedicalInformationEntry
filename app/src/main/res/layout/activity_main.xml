@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#97CCF6"
+    tools:context=".MainActivity">
+
+    <!-- CardView for Free Clinic -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewHealthEducation"
+        android:layout_width="416dp"
+        android:layout_height="134dp"
+        android:layout_marginTop="30dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardViewHomeVisit">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#F3F6F8">
+
+            <ImageView
+                android:id="@+id/imageViewHealthEducation"
+                android:layout_width="101dp"
+                android:layout_height="99dp"
+                android:layout_marginStart="16dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/img_2" />
+
+            <TextView
+                android:id="@+id/textViewHealthEducation"
+                android:layout_width="183dp"
+                android:layout_height="38dp"
+                android:layout_marginStart="16dp"
+                android:text="@string/health_edu"
+                android:textColor="#2160FE"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imageViewHealthEducation"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Spinner
+                android:id="@+id/spinnerHealthEducation"
+                android:layout_width="291dp"
+                android:layout_height="51dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/selector_for_custom_spinner"
+                android:entries="@array/spinner_string_health_edu"
+                android:popupBackground="@drawable/shape_for_custom_spinner"
+                android:prompt="@string/health_edu_now"
+                android:spinnerMode="dropdown"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/imageViewHealthEducation"
+                app:layout_constraintTop_toBottomOf="@+id/textViewHealthEducation"
+                app:layout_constraintVertical_bias="1.0" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewHomeVisit"
+        android:layout_width="406dp"
+        android:layout_height="123dp"
+        android:layout_marginTop="30dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardViewFreeClinic">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="409dp"
+            android:layout_height="126dp"
+            android:background="#F3F6F8">
+
+            <ImageView
+                android:id="@+id/imageViewHomeVisit"
+                android:layout_width="101dp"
+                android:layout_height="99dp"
+                android:layout_marginStart="16dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/img_1" />
+
+            <TextView
+                android:id="@+id/textViewHomeVisit"
+                android:layout_width="129dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="16dp"
+                android:text="@string/home_visit"
+                android:textColor="#2160FE"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.49"
+                app:layout_constraintStart_toEndOf="@+id/imageViewHomeVisit"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.336" />
+
+            <Spinner
+                android:id="@+id/spinnerHomeVisit"
+                android:layout_width="289dp"
+                android:layout_height="54dp"
+                android:background="@drawable/selector_for_custom_spinner"
+                android:entries="@array/spinner_string_home_visit"
+                android:popupBackground="@drawable/shape_for_custom_spinner"
+                android:prompt="@string/home_visit_now"
+                android:spinnerMode="dropdown"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imageViewHomeVisit"
+                app:layout_constraintTop_toBottomOf="@+id/textViewHomeVisit" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewFreeClinic"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="145dp"
+            android:background="#F3F6F8">
+
+            <ImageView
+                android:id="@+id/imageViewFreeClinic"
+                android:layout_width="101dp"
+                android:layout_height="99dp"
+                android:layout_marginStart="16dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/img" />
+
+            <TextView
+                android:id="@+id/textViewFreeClinic"
+                android:layout_width="141dp"
+                android:layout_height="44dp"
+                android:layout_marginStart="16dp"
+                android:text="@string/free_clinic"
+                android:textColor="#2160FE"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imageViewFreeClinic"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Spinner
+                android:id="@+id/spinnerFreeClinic"
+                android:layout_width="279dp"
+                android:layout_height="58dp"
+                android:layout_marginTop="13dp"
+                android:layout_marginBottom="4dp"
+                android:background="@drawable/selector_for_custom_spinner"
+                android:entries="@array/spinner_string_free_clinic"
+                android:popupBackground="@drawable/shape_for_custom_spinner"
+                android:prompt="@string/free_clinic_now"
+                android:spinnerMode="dropdown"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.728"
+                app:layout_constraintStart_toEndOf="@+id/imageViewFreeClinic"
+                app:layout_constraintTop_toBottomOf="@+id/textViewFreeClinic"
+                app:layout_constraintVertical_bias="0.684" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <!-- CardView for Home Visit -->
+
+    <!-- CardView for Health Education -->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

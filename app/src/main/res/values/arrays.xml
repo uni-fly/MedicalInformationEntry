@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="spinner_string_free_clinic">
+        <item>第1次义诊</item>
+        <item>第2次义诊</item>
+        <item>第3次义诊</item>
+        <item>第4次义诊</item>
+    </string-array>
+
+    <string-array name="spinner_string_home_visit">
+        <item>第1次家访</item>
+        <item>第2次家访</item>
+        <item>第3次家访</item>
+        <item>第4次家访</item>
+    </string-array>
+
+    <string-array name="spinner_string_health_edu">
+        <item>第1次健康宣教</item>
+        <item>第2次健康宣教</item>
+        <item>第3次健康宣教</item>
+        <item>第4次健康宣教</item>
+    </string-array>
+</resources>
